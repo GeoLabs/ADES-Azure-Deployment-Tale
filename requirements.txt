@@ -1,0 +1,6 @@
+panel
+holoviews
+matplotlib
+hvplot
+folium
+s3cmd

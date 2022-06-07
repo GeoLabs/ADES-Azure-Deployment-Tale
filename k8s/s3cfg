@@ -1,0 +1,14 @@
+# Setup endpoint
+host_base = http://127.0.0.1:9000
+host_bucket = http://127.0.0.1:9000
+use_https = False
+
+# Setup access keys
+#access_key =  minioadmin
+#secret_key = minioadmin
+
+access_key =  minio
+secret_key = minio123
+
+# Enable S3 v4 signature APIs
+signature_v2 = False

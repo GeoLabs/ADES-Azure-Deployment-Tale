@@ -1,0 +1,22 @@
+#
+# Install kubectl
+#
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+mkdir ~/.local/bin/
+mv ./kubectl ~/.local/bin/kubectl
+
+#
+# Install AzureCli (az)
+# 
+pip install azure-cli
+#curl -L https://aka.ms/InstallAzureCliBundled -o azure-cli_bundle.tar.gz
+#tar -xvzf azure-cli_bundle.tar.gzhttps://helm.sh/docs/intro/quickstart/
+#azure-cli_bundle_*/installer
+
+#
+# Install HELM
+#
+curl -o helm-v3.9.0-linux-amd64.tar.gz "https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz"
+tar -zxvf helm-v3.9.0-linux-amd64.tar.gz
+mv $(find . -name helm) ~/.local/bin/
